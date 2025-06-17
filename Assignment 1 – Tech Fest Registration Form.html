@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Tech Fest Registration Form</h2>
+  <form action="/submit" method="post">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <!-- College -->
+    <label for="college">College Name:</label><br>
+    <input type="text" id="college" name="college"><br><br>
+    
+    <!-- Year Dropdown -->
+    <label for="year">Year:</label><br>
+    <select id="year" name="year">
+      <option value="first">1st Year</option>
+      <option value="second">2nd Year</option>
+      <option value="third">3rd Year</option>
+      <option value="fourth">4th Year</option>
+    </select><br><br>
+    
+    <!-- Gender Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    
+    <!-- Events Checkboxes -->
+    <label>Select Events to Participate:</label><br>
+    <input type="checkbox" id="coding" name="events" value="coding">
+    <label for="coding">Coding Challenge</label><br>
+    <input type="checkbox" id="hackathon" name="events" value="hackathon">
+    <label for="hackathon">Hackathon</label><br>
+    <input type="checkbox" id="robotics" name="events" value="robotics">
+    <label for="robotics">Robotics</label><br>
+    <input type="checkbox" id="quiz" name="events" value="quiz">
+    <label for="quiz">Tech Quiz</label><br><br>
+    
+    <!-- Comments -->
+    <label for="comments">Any Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+    
+    <!-- Submit -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
